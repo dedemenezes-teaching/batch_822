@@ -1,0 +1,7 @@
+.border {
+  border: 1px blue solid;
+}
+
+.img-circle {
+  border-radius: 50%;
+}

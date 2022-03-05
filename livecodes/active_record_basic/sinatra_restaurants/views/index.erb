@@ -1,0 +1,19 @@
+<h1>Batch #822</h1>
+<p>This is our first Restaurant webapp</p>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <a href="/restaurants/<%= restaurant.id %>">
+        <%= restaurant.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<form action='/restaurants' method='POST'>
+  <label for='name'>Name</label>
+  <input type="text" name='name' id='name'>
+  <label for="city">City</label>
+  <input type="text" name='city' id='city'>
+  <input type="submit">
+</form>
